@@ -1,0 +1,31 @@
+:root{
+    --main-colorIngenium: #202e54;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+main{
+    display: block;
+    width: 100vw;
+    min-height: 82vh;
+}
+
+#navbar{
+    background-color: var(--main-colorIngenium);
+}
+
+/* POSICIONO EL FOOTER SIEMPRE ABAJO DEL TODO */
+footer{
+    background-color: var(--main-colorIngenium);
+    color: white;
+    padding: .5rem;
+    width: 100vw;
+    text-align: center;
+}

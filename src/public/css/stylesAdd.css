@@ -1,0 +1,47 @@
+:root{
+    --main-colorIngenium: #202e54;
+}
+
+#labelInputSalva{
+    color: var(--main-colorIngenium);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#inputSalva {
+    color: var(--main-colorIngenium);
+    border: 3px solid var(--main-colorIngenium);
+    background-color: var(--main-colorIngenium);
+    color: white;
+}
+
+#btnSubmit{
+    width: 100%;
+    padding: .3rem;
+    border: 3px solid var(--main-colorIngenium);
+    border-radius: 5px;
+    color: var(--main-colorIngenium);
+    cursor: pointer;
+}
+
+#btnSubmit:hover{
+    background-color: var(--main-colorIngenium);
+    color: white;
+}
+
+#btnSubmit:disabled{
+    border-color: grey;
+    color: grey;
+}
+
+#btnSubmit:disabled:hover{
+    background-color: white;
+    cursor: not-allowed;
+}
+
+#previewSalva{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

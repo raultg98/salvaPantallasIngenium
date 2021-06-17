@@ -9,5 +9,9 @@ router.get('/', controllerRaiz.get);
 
 
 /********    RUTA /ADD    ********/
+router.get('/add', controllerAdd.get);
+
+router.post('/add', controllerAdd.upload ,controllerAdd.post);
+
 
 module.exports = router;

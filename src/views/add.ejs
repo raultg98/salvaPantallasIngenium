@@ -1,0 +1,32 @@
+<%- include('templates/head', { titulo: 'SALVAPANTALLAS INGENIUM' }) %> 
+
+<%- include('templates/navbar') %> 
+
+<main>
+
+    <div id="contenedor-carga">
+        <div id="carga"></div>
+    </div>
+
+    <form action="/add" method="POST" enctype="multipart/form-data" class="row m-4 g-3">
+        <div class="col-12 mt-1" id="mensajeError"></div>
+
+        <div class="col-12">
+            <label for="inputSalva" class="label-control" id="labelInputSalva">SUBE UN SALVAPANTALLAS</label>
+            <input type="file" name="salvapantallas" class="form-control archivo" id="inputSalva" multiple>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" id="btnSubmit" disabled>
+                <i class="fas fa-upload mx-2"></i> <b>Upload files</b> 
+            </button>
+        </div>
+        
+        <div class="col-12" id="previewSalva" class="my-2"></div>
+
+    </form>
+</main>
+
+<script src="/js/previewSalva.js"></script>
+
+<%- include('templates/footer') %>
