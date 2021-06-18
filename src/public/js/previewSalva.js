@@ -19,8 +19,7 @@ inputSalva.addEventListener('change', (e) => {
         }
     }
 
-    // AÑADIR VALIDACION VARIAS IMAGENES.
-
+    
     for(let i=0; i<cantidadSalvaPantallas; i++){
         const extensionArchivo = e.target.files[i].name.split('.')[1];
         const expReg = /png|jpeg|jpg/;

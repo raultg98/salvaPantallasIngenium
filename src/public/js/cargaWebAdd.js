@@ -13,3 +13,10 @@ window.onload = function(){
     contenedor.style.opacity = '0';
     cargaLetras.innerText = '';
 }
+
+/***************     NAVBAR     ***************/
+const add = document.getElementById('add');
+const inicio = document.getElementById('inicio');
+
+add.setAttribute('class', 'nav-link mx-1 active fw-bold');
+inicio.setAttribute('class', 'nav-link mx-1');

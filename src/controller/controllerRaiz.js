@@ -1,12 +1,24 @@
 const controller = {  }
 const path = require('path');
+const fs = require('fs');
+const script = require('../serverScripts/serverScript');
+
 
 controller.get = (req, res, next) => {
     console.log('ESTOY EN LA RUTA /');
 
-    // TENGO QUE LEER LOS ARCHIVOS QUE TENGO EN LA CARPETA DE LOS SALVAPANTALLAS
-    // SE SUPONE QUE LOS SALVAPANTALLAS QUE TENGO EL LA CARPTETA YA TIENEN LAS MEDIDAS.
+    script.pasarDatosCliente();
+
     res.render('index');
+}
+
+controller.borrarSalPan = (req, res, next) => {
+    // OBTENGO EL SALVAPANTALLAS EL CUAL QUIERO ELIMINAR.
+    const { id } = req.params;
+
+    script.borrarSalvaPantallas(id);
+    
+    res.redirect('/');
 }
 
 module.exports = controller;

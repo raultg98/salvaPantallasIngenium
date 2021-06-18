@@ -11,11 +11,10 @@ html, body{
     height: 100%;
 }
 
-main{
-    display: block;
+/* main{
     width: 100vw;
     min-height: 82vh;
-}
+} */
 
 #navbar{
     background-color: var(--main-colorIngenium);
@@ -26,6 +25,5 @@ footer{
     background-color: var(--main-colorIngenium);
     color: white;
     padding: .5rem;
-    width: 100vw;
     text-align: center;
 }

@@ -18,6 +18,7 @@ app.use(require('./routes/appRoutes'));
 
 
 /***************    STATIC FILES    ***************/
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '/public')));
 
 

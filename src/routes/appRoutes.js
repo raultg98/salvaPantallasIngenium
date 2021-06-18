@@ -7,6 +7,8 @@ const router = Router();
 /********    RUTA /    ********/
 router.get('/', controllerRaiz.get);
 
+router.post('/borrar/:id', controllerRaiz.borrarSalPan);
+
 
 /********    RUTA /ADD    ********/
 router.get('/add', controllerAdd.get);

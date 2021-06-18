@@ -1,18 +1,22 @@
 <%- include('templates/head', { titulo: 'SALVAPANTALLAS INGENIUM' }) %> 
 
-<%- include('templates/navbar') %> 
-
 <main>
     <div id="contenedor-carga">
         <div id="contenedor-carga__letras">
-            <h1 id="carga-letras"></h1>
+            <h1 id="carga-letras" class="tex-center"></h1>
         </div>
 
         <div id="carga"></div>
     </div>
 
+    <div id="divPadre"></div>
+
+
+    <form method="POST" id="formulario"></form>
+
 </main>
 
 <script src="/js/cargaWebIndex.js"></script>
+<script src="/js/mostrarSalvaPantallas.js"></script>
 
 <%- include('templates/footer') %> 
